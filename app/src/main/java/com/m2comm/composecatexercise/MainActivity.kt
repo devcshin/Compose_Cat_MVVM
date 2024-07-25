@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.m2comm.composecatexercise.ui.navigation.MainNav
 import com.m2comm.composecatexercise.ui.theme.ComposeCatExerciseTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +19,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-
+            ComposeCatExerciseTheme {
+                MainNav()
+            }
         }
     }
 }
