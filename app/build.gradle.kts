@@ -19,6 +19,9 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        buildConfigField("String", "API_URL", "\"https://api.thecatapi.com/\"")
+        buildConfigField("String", "API_KEY", "\"live_lacAHfHp37lUY3eyL2zj5yRt8M5jjTpyFhC1dKdBOy3UdT0dEAIk0P5ZixHHJ1SD\"")
     }
 
     buildTypes {
@@ -39,6 +42,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.1"
@@ -73,6 +77,10 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     implementation(libs.hilt.android)
     implementation(libs.androidx.hilt.navigation.compose)
+
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+
 
 
 }

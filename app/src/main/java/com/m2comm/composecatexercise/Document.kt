@@ -13,6 +13,16 @@ object Document {}
  * - viewmodel (add Hilt dependency)
  * - CatState - Cat data class (at parcelize dependency)
  *
+ * Repository
+ * CatApi interface (add Retrofit dependency)
+ * ApiCat data class
+ * NetworkModule di
+ * AuthInterceptor
+ * BuildConfig
+ *
+ * Application - @AndroidEntryPoint - Manifest
+ *
+ * Viewmodel - Repository - Data Mapper
  *
  *
  *
