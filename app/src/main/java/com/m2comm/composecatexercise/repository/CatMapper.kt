@@ -3,8 +3,9 @@ package com.m2comm.composecatexercise.repository
 import com.m2comm.composecatexercise.model.ApiCat
 import com.m2comm.composecatexercise.model.Cat
 import com.m2comm.composecatexercise.util.ApiMapper
+import javax.inject.Inject
 
-class CatMapper : ApiMapper<ApiCat, Cat>{
+class CatMapper @Inject constructor(): ApiMapper<ApiCat, Cat>{
     override fun mapToDomain(input: ApiCat): Cat {
         return Cat(
             id = input.breeds[0].id,

@@ -24,6 +24,9 @@ object Document {}
  *
  * Viewmodel - Repository - Data Mapper
  *
+ * CatListScreen
+ *
+ * Hilt, ksp (add Dependency)
  *
  *
  */

@@ -3,12 +3,17 @@ package com.m2comm.composecatexercise.di
 import com.m2comm.composecatexercise.BuildConfig
 import com.m2comm.composecatexercise.api.CatApi
 import com.m2comm.composecatexercise.util.AuthInterceptor
+import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
+@Module
+@InstallIn(SingletonComponent::class)
 class NetworkModule {
 
     @Singleton
